@@ -1,0 +1,30 @@
+#nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  padding: 0;
+  align-self: flex-start;
+  backdrop-filter: blur(5px);
+  width: 110rem;
+  height: 7rem;
+  border-radius: 10px;
+  border: 1px solid var(--purple);
+  margin-left: 0;
+  margin-right: 0;
+  align-self: center;
+  box-shadow: 5px 5px 5px var(--grey);
+}
+
+#logoImage {
+  opacity: 1;
+  width: 3em;
+  padding: 0.5em;
+  border: 3px solid white; 
+  border-radius: 50%;
+}
+
+h4 {
+  color: white;
+}

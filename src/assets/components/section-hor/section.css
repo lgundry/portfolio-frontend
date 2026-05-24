@@ -1,0 +1,4 @@
+.horizontalSection {
+  display: flex;
+  flex-direction: row;
+}

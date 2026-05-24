@@ -1,0 +1,61 @@
+#landing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  height: 4000px;
+}
+
+#profileImage {
+  border: 10px solid var(--purple);
+  box-shadow: 5px 5px 5px var(--grey);
+  border-radius: 25px;
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+  margin-left: 1rem;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 110rem;
+}
+
+#lightbar {
+  height: 0;
+  width: 90rem;
+  border: 5px solid var(--purple);
+  border-radius: 5px;
+  box-shadow: 7px 7px 7px var(--grey);
+  margin: 4rem;
+}
+
+#introTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2em;
+}
+
+#introText {
+  margin: 0;
+}
+
+#introSubtext {
+  margin: 0;
+}
+
+#about {
+  width: 110rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid var(--purple);
+  box-shadow: 5px 5px 5px var(--grey);
+  border-radius: 10px;
+  margin: 1em;
+}

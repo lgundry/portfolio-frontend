@@ -1,0 +1,4 @@
+.verticalSection {
+  display: flex;
+  flex-direction: column;
+}
