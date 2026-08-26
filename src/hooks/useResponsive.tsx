@@ -1,6 +1,7 @@
 // src/hooks/useResponsive.ts
 import { useEffect, useState } from "react";
-import { ResponsiveConstants, ScreenSize } from "constants/responsive";
+
+export type ScreenSize = "small" | "medium" | "large";
 
 export function useResponsive() {
   const [screenSize, setScreenSize] = useState<ScreenSize>("large");
@@ -18,5 +19,5 @@ export function useResponsive() {
     return () => window.removeEventListener("resize", update);
   }, []);
 
-  return ResponsiveConstants[screenSize];
+  return screenSize;
 }
