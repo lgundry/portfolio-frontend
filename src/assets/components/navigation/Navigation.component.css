@@ -1,0 +1,8 @@
+div.nav__container {
+  position: fixed;
+  top: 0vh;
+  left: 5vw; 
+
+  display: flex;
+}
+
