@@ -7,10 +7,10 @@ div.intro__container {
 div.intro {
   display: flex;
   flex-direction: row;
-  align-self: center;
   width: 60vw;
-  height: 25vw;
+  height: 45vh;
   padding: 2%;
+  margin-top: 50vh;
 
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(18px);

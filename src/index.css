@@ -10,7 +10,8 @@
   --color-tertiary: #012615;
   --color-quaternary: #404040;
   --color-quinary: #0D0D0D;
-
+  
+  /* Text Color */
   color: #fff;
 }
 
@@ -24,15 +25,11 @@ body,
 }
 
 body {
-  background-color: var(--color-quinary);
+  background-color: #000;
 }
 
 #root {
   font-family: 'Libre Franklin', sans-serif;
-  background-image: url('./assets/images/pexels-enginakyurt-5200063.jpg');
-  background-repeat: no-repeat;
-  background-position: 0px -15vh;
-  background-size: 100vw;
 
   display: flex;
   flex-direction: column;

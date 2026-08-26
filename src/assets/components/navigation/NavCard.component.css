@@ -4,4 +4,13 @@
 }
 
 .navcard__icon {
+  display: flex;
+  width: 50px;
+  align-self: center;
+  margin-right: -5px;
+}
+
+.navcard__container h3 {
+  display: flex;
+  align-items: center;
 }

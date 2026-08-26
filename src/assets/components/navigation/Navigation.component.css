@@ -4,5 +4,6 @@ div.nav__container {
   left: 5vw; 
 
   display: flex;
+  z-index: 1;
 }
 
