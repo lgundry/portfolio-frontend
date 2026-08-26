@@ -1,4 +1,4 @@
-import './intro.component.css'
+import './Intro.component.css'
 import Headshot from 'images/IMG_4838.JPEG'
 
 function Intro() {
