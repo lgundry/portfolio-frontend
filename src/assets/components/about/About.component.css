@@ -1,4 +1,26 @@
 .about__container {
-  margin-top: 30vh;
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
+  border: 1px solid purple;
+}
+
+.aboutText__container {
+  width: 25vw;
+  margin-right: 60px;
+  align-content: center;
+  border: 1px solid green;
+}
+
+.about__text {
+}
+
+.about__heading {
+  
+}
+
+.loading__container {
+  align-content: center;
+  border: 1px solid blue;
 }

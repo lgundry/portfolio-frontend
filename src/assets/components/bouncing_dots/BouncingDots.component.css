@@ -1,0 +1,53 @@
+/* The component uses --dot-size and --dot-color custom properties provided by inline style */
+
+/* Container */
+.bouncing-dots {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+
+  /* let color cascade into dots via currentColor */
+  color: var(--dot-color, currentColor);
+}
+
+/* Dot base */
+.bouncing-dots .dot {
+  width: var(--dot-size, 14px);
+  height: var(--dot-size, 14px);
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0.95;
+  transform: translateY(0);
+  animation: bounce 0.9s ease-in-out infinite;
+}
+
+/* Staggered delays */
+.bouncing-dots .dot:nth-child(2) { animation-delay: 0.15s; }
+.bouncing-dots .dot:nth-child(3) { animation-delay: 0.30s; }
+
+/* Larger on wider screens (optional) */
+@media (min-width: 768px) {
+  .bouncing-dots .dot { width: calc(var(--dot-size, 14px) * 1.25); height: calc(var(--dot-size, 14px) * 1.25); }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-12px); }
+}
+
+/* Screen reader only helper */
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+}

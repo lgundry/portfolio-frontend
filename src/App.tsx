@@ -1,10 +1,8 @@
-import { useState } from 'react'
 import './App.css'
-import { COLORS } from 'constants/colors.ts'
-import Intro from 'components/intro/Intro.component.tsx'
-import Navigation from 'components/navigation/Navigation.component.tsx'
-import About from 'components/about/About.component.tsx'
-import ParallaxBackground from 'components/parallax/ParallaxBackground.component.tsx'
+import Intro from 'components/intro/Intro.component'
+import Navigation from 'components/navigation/Navigation.component'
+import About from 'components/about/About.component'
+import ParallaxBackground from 'components/parallax/ParallaxBackground.component'
 
 function App() {
   return (

@@ -1,9 +1,16 @@
 import './About.component.css'
+import BouncingDots from '../bouncing_dots/BouncingDots.component.tsx'
 
 function About() {
   return (
     <div className="about__container">
-      <h1>This is the about me section</h1>
+      <div className="aboutText__container">
+        <h2 className="about__heading">About me</h2>
+        <p className="about__text">Lorem Ipsum or something like that. Really not sure what I'm gonna put here</p>
+      </div>
+      <div className="loading__container">
+        <BouncingDots size={32} color="#D9D9D9" title="Loading profile" />
+      </div>
     </div>
   )
 };

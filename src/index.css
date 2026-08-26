@@ -30,11 +30,6 @@ body {
 
 #root {
   font-family: 'Libre Franklin', sans-serif;
-
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
 }
 
 h1 {
@@ -43,12 +38,12 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.25rem, 3.5vw, 5rem);
+  font-size: clamp(1.25rem, 3vw, 5rem);
   font-weight: 700;
 }
 
 h3 {
-  font-size: clamp(0.75rem, 3vw, 2rem);
+  font-size: clamp(0.75rem, 2.5vw, 2rem);
   font-weight: 500;
 }
 
