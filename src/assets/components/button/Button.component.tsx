@@ -1,7 +1,7 @@
 import './Button.component.css'
 
 interface myProps {
-  style: {};
+  style?: {};
   children: React.ReactNode;
   onPress?: () => void;
   disabled?: boolean;
@@ -22,4 +22,3 @@ function Button(props: myProps) {
 };
 
 export default Button;
-

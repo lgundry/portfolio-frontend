@@ -1,5 +1,5 @@
 import './Intro.component.css'
-import Headshot from '../../images/IMG_4838.JPEG'
+import Headshot from 'images/IMG_4838.jpeg'
 
 function Intro() {
   return (
