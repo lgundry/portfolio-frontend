@@ -14,7 +14,7 @@ function NavCard(props: myProps) {
     <div className="navcard__container">
       <Button onPress={() => console.log("clicked")}>
         <Icon className="navcard__icon"/>
-        <h3>{ props.title }</h3>
+        <h3 className="navcard__text">{ props.title }</h3>
       </Button>
     </div>
   )

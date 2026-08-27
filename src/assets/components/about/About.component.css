@@ -2,25 +2,15 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 50vh;
-  border: 1px solid purple;
+  height: 30vh;
 }
 
 .aboutText__container {
   width: 25vw;
   margin-right: 60px;
   align-content: center;
-  border: 1px solid green;
-}
-
-.about__text {
-}
-
-.about__heading {
-  
 }
 
 .loading__container {
   align-content: center;
-  border: 1px solid blue;
 }

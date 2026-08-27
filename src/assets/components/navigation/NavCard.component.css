@@ -11,6 +11,7 @@
 }
 
 .navcard__container h3 {
+  font-size: clamp(1rem, 3.5vw, 2rem);
   display: flex;
   align-items: center;
 }
