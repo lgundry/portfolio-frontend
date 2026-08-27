@@ -2,18 +2,16 @@ import './BouncingDots.component.css'
 
 interface Props {
   size?: number;        // px, default 14
-  color?: string;       // any CSS color, default uses currentColor
   className?: string;
   title?: string;       // accessible label, default "Loading"
 }
 
 function BouncingDots({
   size = 14,
-  color = 'currentColor',
   className = '',
   title = 'Loading',
 }: Props) {
-  const style = { ['--dot-size' as any]: `${size}px`, ['--dot-color' as any]: color } as React.CSSProperties;
+  const style = { ['--dot-size' as any]: `${size}px`} as React.CSSProperties;
 
   return (
     <div

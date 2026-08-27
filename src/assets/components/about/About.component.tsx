@@ -9,7 +9,7 @@ function About() {
         <p className="about__text">Lorem Ipsum or something like that. Really not sure what I'm gonna put here</p>
       </div>
       <div className="loading__container">
-        <BouncingDots size={32} color="#D9D9D9" title="Loading profile" />
+        <BouncingDots size={32} title="Loading profile" />
       </div>
     </div>
   )
