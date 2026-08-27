@@ -1,9 +1,10 @@
 import './Projects.component.css'
+import ProjectCard from './ProjectCard.component.tsx'
 
 function Projects() {
   return (
     <div className="projects__container">
-      <h1>This is the projects section!</h1>
+      <ProjectCard />
     </div>
   )
 }
