@@ -11,7 +11,7 @@ function Skills() {
     <div className="skills__container">
       <h2 className="skills__heading">Skills</h2>
       <div className="skillsLogo__container">
-        <img src={PythonLogo} alt="python" className="skill__logo" />
+        <img src={PythonLogo} alt="python" className="skill__logo" /> 
         <img src={JavascriptLogo} alt="python" className="skill__logo" />
         <img src={HTMLLogo} alt="python" className="skill__logo" />
         <img src={CSSLogo} alt="python" className="skill__logo" />
