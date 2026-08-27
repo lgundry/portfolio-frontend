@@ -14,7 +14,7 @@
 /* Dot base */
 .bouncing-dots .dot {
   width: var(--dot-size, 14px);
-  height: var(--dot-size, 14px);
+  height: calc(var(--dot-size, 14px));
   border-radius: 50%;
   background-color: currentColor;
   opacity: 0.95;
@@ -27,7 +27,7 @@
 .bouncing-dots .dot:nth-child(3) { animation-delay: 0.30s; }
 
 /* Larger on wider screens (optional) */
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
   .bouncing-dots .dot { width: calc(var(--dot-size, 14px) * 1.25); height: calc(var(--dot-size, 14px) * 1.25); }
 }
 

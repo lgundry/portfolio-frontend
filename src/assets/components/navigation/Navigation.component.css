@@ -10,3 +10,8 @@ div.nav__container {
   backdrop-filter: blur(30px);
 }
 
+@media (prefers-color-scheme: light) {
+  div.nav__container {
+    background-color: #f5f5f5AF;
+  }
+}

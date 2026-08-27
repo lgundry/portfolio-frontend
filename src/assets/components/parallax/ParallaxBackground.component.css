@@ -12,4 +12,13 @@
   pointer-events: none; /* let clicks through */
   will-change: transform;
   transform: translate3d(0, 0, 0);
+
+  background-image: url("images/bg-dark.jpg");
+}
+
+
+@media (prefers-color-scheme: light) {
+  .parallax-bg {
+    background-image: url("images/bg-light.jpg");
+  }
 }
