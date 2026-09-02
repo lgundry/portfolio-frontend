@@ -10,9 +10,17 @@ interface myProps {
 
 function NavCard(props: myProps) {
   const Icon = props.icon;
+  
+  const handleScroll = () => {
+    const element = document.getElementById(props.destination);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="navcard__container">
-      <Button onPress={() => console.log("clicked")}>
+      <Button onPress={handleScroll}>
         <Icon className="navcard__icon"/>
         <h3 className="navcard__text">{ props.title }</h3>
       </Button>
