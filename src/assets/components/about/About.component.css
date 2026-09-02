@@ -2,15 +2,18 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 30vh;
 }
 
 .aboutText__container {
-  width: 25vw;
+  width: 35vw;
   margin-right: 60px;
   align-content: center;
 }
 
 .loading__container {
   align-content: center;
+}
+
+.about__text {
+  font-size: 1.2rem;
 }

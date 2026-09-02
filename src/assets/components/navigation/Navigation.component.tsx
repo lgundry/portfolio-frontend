@@ -13,7 +13,7 @@ function Navigation() {
     { title: "Home", destination: "intro__container", icon: LuHouse },
     { title: "About", destination: "about__container", icon: LuUser },
     { title: "Skills", destination: "skills__container", icon: LuWrench },
-    { title: "Projects", destination: "projects__container", icon: LuFolder },
+    /* { title: "Projects", destination: "projects__container", icon: LuFolder }, */
     { title: "Contact", destination: "contact__container", icon: LuMail },
   ]
 
