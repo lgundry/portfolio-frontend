@@ -1,8 +1,7 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-tertiary);
-  border-top: 2px solid var(--color-primary);
+  border-top: 2px solid #b0b0b071;
   padding: 3rem 2rem;
   margin-top: 4rem;
 }
@@ -37,8 +36,7 @@
 }
 
 .footer__link:hover {
-  color: var(--color-primary);
-  text-shadow: 0 0 8px rgba(2, 89, 48, 0.5);
+  color: #404040;
 }
 
 .footer__text {
@@ -50,7 +48,6 @@
 
 .footer__divider {
   height: 1px;
-  background-color: var(--color-primary);
   margin: 2rem auto;
   width: 80%;
 }
