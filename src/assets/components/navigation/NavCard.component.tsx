@@ -13,7 +13,11 @@ function NavCard(props: myProps) {
   
   const handleNavigation = () => {
     const element = document.getElementById(props.destination);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (element) {
+      const navHeight = document.querySelector('.nav__container')?.clientHeight || 0;
+      const offsetTop = element.offsetTop - navHeight;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
   };
   
   return (
