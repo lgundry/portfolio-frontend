@@ -3,7 +3,6 @@ import {
   LuHouse,
   LuUser,
   LuWrench,
-  LuFolder,
   LuMail
 } from "react-icons/lu"
 import NavCard from './NavCard.component.tsx'
