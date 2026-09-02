@@ -7,7 +7,7 @@ function Footer() {
   const resumeUrl = '/Logan_Gundry_Resume.pdf'
 
   return (
-    <footer className="footer__container">
+    <footer id="contact__container" className="footer__container">
       <div className="footer__content">
         <div className="footer__section">
           <h3>Get in Touch</h3>
