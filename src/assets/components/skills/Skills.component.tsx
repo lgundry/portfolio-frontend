@@ -11,7 +11,7 @@ import Cpp from 'images/cpp.svg'
 
 function Skills() {
   return (
-    <div className="skills__container">
+    <div id="skills__container" className="skills__container">
       <h2 className="skills__heading">Skills</h2>
       <div className="skillsLogo__container">
         <img src={PythonLogo} alt="python" className="skill__logo" /> 

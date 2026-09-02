@@ -3,7 +3,7 @@ import Headshot from 'images/IMG_4838.jpeg'
 
 function Intro() {
   return (
-    <div className="intro__container">
+    <div id="intro__container" className="intro__container">
       <div className="intro">
         <div className="intro__text">
           <h1 className="intro__supertext">The name's Logan</h1>
