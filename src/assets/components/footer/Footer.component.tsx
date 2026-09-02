@@ -1,10 +1,44 @@
 import './Footer.component.css'
 
 function Footer() {
+  const currentYear = new Date().getFullYear()
+  const contactEmail = 'portfolio-inquiry@gmail.com'
+  const githubUrl = 'https://github.com/lgundry'
+  const resumeUrl = '/Logan_Gundry_Resume.pdf'
+
   return (
-    <div className="footer__container">
-      <h1>This is the footer</h1>
-    </div>
+    <footer className="footer__container">
+      <div className="footer__content">
+        <div className="footer__section">
+          <h3>Get in Touch</h3>
+          <a href={`mailto:${contactEmail}`} className="footer__link">
+            {contactEmail}
+          </a>
+          <p className="footer__text">Use this email to reach out—it helps me filter my inbox!</p>
+        </div>
+
+        <div className="footer__section">
+          <h3>My Work</h3>
+          <a href={githubUrl} className="footer__link" target="_blank" rel="noopener noreferrer">
+            GitHub Profile
+          </a>
+        </div>
+
+        <div className="footer__section">
+          <h3>Resume</h3>
+          <a href={resumeUrl} className="footer__link" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div className="footer__divider"></div>
+
+      <div className="footer__bottom">
+        <p className="footer__copyright">&copy; {currentYear} Logan Gundry. All rights reserved.</p>
+      </div>
+    </footer>
   )
 }
-export default Footer;
+
+export default Footer
