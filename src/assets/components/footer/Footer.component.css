@@ -36,8 +36,7 @@
 }
 
 .footer__link:hover {
-  color: var(--color-primary);
-  text-shadow: 0 0 8px rgba(2, 89, 48, 0.5);
+  color: #404040;
 }
 
 .footer__text {
