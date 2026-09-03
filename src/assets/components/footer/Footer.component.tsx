@@ -16,31 +16,17 @@ function Footer() {
         </div>
 
         <div className="footer__section">
-<<<<<<< Updated upstream
           <a href={githubUrl} className="footer__text" target="_blank" rel="noopener noreferrer">
-=======
-          <a href={githubUrl} className="footer__text footer__link" target="_blank" rel="noopener noreferrer">
->>>>>>> Stashed changes
             <p className="">GitHub Profile</p>
           </a>
         </div>
 
         <div className="footer__section">
-<<<<<<< Updated upstream
           <a href={resumeUrl} target="_blank" className="footer__text">
-=======
-          <a href={resumeUrl} target="_blank" className="footer__text footer__link">
->>>>>>> Stashed changes
             <p className="">Resume</p>
           </a>
         </div>
       </div>
-<<<<<<< Updated upstream
-=======
-
-      <div className="footer__divider"></div>
-
->>>>>>> Stashed changes
     </footer>
   )
 }

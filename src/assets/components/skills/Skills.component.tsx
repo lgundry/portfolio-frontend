@@ -29,11 +29,7 @@ function Skills() {
         <SkillCard 
           key={ index }
           label={ skill.label }
-<<<<<<< Updated upstream
           image={ skill.icon }
-=======
-          icon={ skill.icon }
->>>>>>> Stashed changes
         />
       )}
     </div>
