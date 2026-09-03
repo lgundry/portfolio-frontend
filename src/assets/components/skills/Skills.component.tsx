@@ -1,4 +1,5 @@
 import './Skills.component.css'
+import SkillCard from './SkillCard.component'
 import PythonLogo from 'images/python.svg'
 import JavascriptLogo from 'images/javascript.svg'
 import HTMLLogo from 'images/html.svg'
@@ -9,23 +10,28 @@ import WordpressLogo from 'images/wordpress.svg'
 import ReactLogo from 'images/react.svg'
 import Cpp from 'images/cpp.svg'
 
+const skills = [
+     { label: "Python", icon: PythonLogo },
+     { label: "JavaScript", icon: PythonLogo },
+     { label: "HTML", icon: PythonLogo },
+     { label: "CSS", icon: PythonLogo },
+     { label: "C#", icon: PythonLogo },
+     { label: "C++", icon: PythonLogo },
+     { label: ".NET", icon: PythonLogo },
+     { label: "Wordpress", icon: PythonLogo },
+     { label: "React", icon: PythonLogo },
+]
+
 function Skills() {
   return (
     <div id="skills__container" className="skills__container">
-      <h2 className="skills__heading">Skills</h2>
-      <div className="skillsLogo__container">
-        <img src={PythonLogo} alt="python" className="skill__logo" /> 
-        <img src={JavascriptLogo} alt="python" className="skill__logo" />
-        <img src={HTMLLogo} alt="python" className="skill__logo" />
-        <img src={CSSLogo} alt="python" className="skill__logo" />
-        <img src={CsharpLogo} alt="python" className="skill__logo" />
-        <img src={Cpp} alt="python" className="skill__logo" />
-      </div>
-      <div className="skillsLogo__container">
-        <img src={NETLogo} alt="wordpress" className="skill__logo" />
-        <img src={WordpressLogo} alt="wordpress" className="skill__logo" />
-        <img src={ReactLogo} alt="wordpress" className="skill__logo" />
-      </div>
+      {skills.map((skill, index) =>
+        <SkillCard 
+          key={ index }
+          label={ skill.label }
+          image={ skill.icon }
+        />
+      )}
     </div>
   )
 }
