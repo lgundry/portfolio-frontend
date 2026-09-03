@@ -10,21 +10,18 @@ function Footer() {
     <footer id="contact__container" className="footer__container">
       <div className="footer__content">
         <div className="footer__section">
-          <h3>Get in Touch</h3>
           <a href={`mailto:${contactEmail}`} className="footer__link">
             {contactEmail}
           </a>
         </div>
 
         <div className="footer__section">
-          <h3>My Work</h3>
           <a href={githubUrl} className="footer__link" target="_blank" rel="noopener noreferrer">
             GitHub Profile
           </a>
         </div>
 
         <div className="footer__section">
-          <h3>Resume</h3>
           <a href={resumeUrl} className="footer__link" download>
             Download Resume
           </a>
