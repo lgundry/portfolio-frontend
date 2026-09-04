@@ -1,0 +1,11 @@
+.skillCard__container {
+  width: 80vw;
+}
+
+.skillCard__image {
+  width: 10vw;
+}
+
+.skillCard__label {
+  text-align: center;
+}

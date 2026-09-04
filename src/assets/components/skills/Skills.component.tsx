@@ -8,31 +8,34 @@ import CsharpLogo from 'images/csharp.svg'
 import NETLogo from 'images/net.svg'
 import WordpressLogo from 'images/wordpress.svg'
 import ReactLogo from 'images/react.svg'
-import Cpp from 'images/cpp.svg'
+import CppLogo from 'images/cpp.svg'
 
 const skills = [
      { label: "Python", icon: PythonLogo },
-     { label: "JavaScript", icon: PythonLogo },
-     { label: "HTML", icon: PythonLogo },
-     { label: "CSS", icon: PythonLogo },
-     { label: "C#", icon: PythonLogo },
-     { label: "C++", icon: PythonLogo },
-     { label: ".NET", icon: PythonLogo },
-     { label: "Wordpress", icon: PythonLogo },
-     { label: "React", icon: PythonLogo },
+     { label: "JavaScript", icon: JavascriptLogo },
+     { label: "HTML", icon: HTMLLogo },
+     { label: "CSS", icon: CSSLogo},
+     { label: "C#", icon: CsharpLogo},
+     { label: "C++", icon: CppLogo},
+     { label: ".NET", icon: NETLogo},
+     { label: "Wordpress", icon: WordpressLogo},
+     { label: "React", icon: ReactLogo},
 ]
 
 function Skills() {
   return (
-    <div id="skills__container" className="skills__container">
-      {skills.map((skill, index) =>
-        <SkillCard 
-          key={ index }
-          label={ skill.label }
-          image={ skill.icon }
-        />
-      )}
-    </div>
+    <>
+      <h2 className="skills__heading">Skills</h2>
+      <div id="skills__container" className="skills__container">
+        {skills.map((skill, index) =>
+          <SkillCard 
+            key={ index }
+            label={ skill.label }
+            image={ skill.icon }
+          />
+        )}
+      </div>
+    </>
   )
 }
 export default Skills;

@@ -1,8 +1,6 @@
 .skills__container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  width: 80vw;
+  text-align: center;
 }
 
 .skills__heading {
