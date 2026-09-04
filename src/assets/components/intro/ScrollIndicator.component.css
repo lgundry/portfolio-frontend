@@ -1,0 +1,40 @@
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.scroll-indicator__arrow {
+  width: 24px;
+  height: 24px;
+  border: 2px solid currentColor;
+  border-top: none;
+  border-left: none;
+  transform: rotate(-45deg);
+  animation: scroll-bounce 2s infinite;
+  opacity: 0.7;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: rotate(-45deg) translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: rotate(-45deg) translateY(10px);
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .scroll-indicator__arrow {
+    border-color: #333;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .scroll-indicator__arrow {
+    border-color: #ccc;
+  }
+}

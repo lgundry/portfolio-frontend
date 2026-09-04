@@ -1,10 +1,12 @@
 div.intro__container {
   display: flex;
+  flex-direction: column;
   flex: 1;
   justify-content: center;
+  align-items: center;
 
   margin-top: 7vh;
-  margin-bottom: 36vh;
+  margin-bottom: 0vh;
 }
 
 div.intro {

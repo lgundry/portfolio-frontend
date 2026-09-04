@@ -1,5 +1,6 @@
 import './Intro.component.css'
 import Headshot from 'images/IMG_4838.jpeg'
+import ScrollIndicator from './ScrollIndicator.component'
 
 function Intro() {
   return (
@@ -11,6 +12,7 @@ function Intro() {
         </div>
         <img className="intro__headshot" src={Headshot} alt="headshot" />
       </div>
+      <ScrollIndicator />
     </div>
   )
 };
