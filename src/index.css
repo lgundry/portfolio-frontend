@@ -49,6 +49,16 @@ h5 {
   font-weight: 250;
 }
 
+.highlight-1 {
+  background: none;
+  color: var(--text-accent-1);
+}
+
+.highlight-2 {
+  background: none;
+  color: var(--text-accent-2);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

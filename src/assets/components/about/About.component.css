@@ -1,14 +1,17 @@
 .about__container {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  margin: auto;
+  margin-top: 11vh;
   margin-bottom: 10vh;
+  padding-top: 10vh;
+  width: 70vw;
 }
 
 .aboutText__container {
   width: 40vw;
   margin-right: 60px;
   align-content: center;
+  align-self: center;
 }
 
 .loading__container {
@@ -16,11 +19,15 @@
 }
 
 .about__heading {
-  margin-bottom: 15px;
+  margin: 0;
 }
 
 .about__text {
   font-size: 1.2rem;
-  margin-bottom: 60px;
 }
 
+.about__icon {
+  width: 20vw;
+  margin: auto;
+  align-self: center;
+}

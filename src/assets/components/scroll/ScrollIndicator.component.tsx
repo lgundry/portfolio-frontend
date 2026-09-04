@@ -1,4 +1,5 @@
 import './ScrollIndicator.component.css'
+import ScrollArrow from 'images/arrow.svg?react'
 
 function ScrollIndicator() {
   const handleScroll = () => {
@@ -16,10 +17,7 @@ function ScrollIndicator() {
       onClick={handleScroll}
       aria-label="Scroll to About section"
     >
-      <div className="scroll-indicator__arrows">
-        <div className="scroll-indicator__arrow"></div>
-        <div className="scroll-indicator__arrow"></div>
-      </div>
+      <ScrollArrow className="scroll-indicator__arrow" />
     </button>
   )
 }
