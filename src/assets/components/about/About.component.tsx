@@ -17,9 +17,6 @@ function About() {
             cybersecurity. I enjoy taking things apart, figuring out how they work, 
             and occasionally making them do something they probably weren't designed to do.
         </p>
-        <p className="about__text">
-            Basically, computers have been my thing for a while.
-        </p>
       </div>
       <div className="loading__container">
         <BouncingDots size={32} title="Loading profile" />

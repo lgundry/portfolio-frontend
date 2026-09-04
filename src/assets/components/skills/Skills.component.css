@@ -1,16 +1,13 @@
 .skills__container {
+  width: 70vw;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
   justify-content: center;
 }
 
 .skills__heading {
-  display: flex;
-  justify-content: center;
-}
-
-.skillsLogo__container {
   display: flex;
   justify-content: center;
 }

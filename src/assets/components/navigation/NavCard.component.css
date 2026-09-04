@@ -1,6 +1,6 @@
 .navcard__container {
-  margin-right: 7px;
-  margin-left: 7px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .navcard__icon {
@@ -10,8 +10,12 @@
   margin-right: -5px;
 }
 
+.navcard__text {
+  font-weight: 500;
+}
+
 .navcard__container h3 {
-  font-size: clamp(1rem, 3.5vw, 2rem);
+  font-size: clamp(1rem, 3.5vw, 1.3rem);
   display: flex;
   align-items: center;
 }
