@@ -1,7 +1,6 @@
 import './Footer.component.css'
 
 function Footer() {
-  const currentYear = new Date().getFullYear()
   const contactEmail = 'logangundry1+porfolio@gmail.com'
   const githubUrl = 'https://github.com/lgundry'
   const resumeUrl = '/Logan_Gundry_Resume.pdf'
