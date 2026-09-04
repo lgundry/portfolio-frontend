@@ -10,20 +10,20 @@ function Footer() {
     <footer id="contact__container" className="footer__text footer__container">
       <div className="footer__content">
         <div className="footer__section">
-          <a href={`mailto:${contactEmail}`} className="footer__link">
-            <p className="">Contact</p>
+          <a href={`mailto:${contactEmail}`} className="footer__text footer__link">
+            <p>Contact</p>
           </a>
         </div>
 
         <div className="footer__section">
-          <a href={githubUrl} className="footer__text" target="_blank" rel="noopener noreferrer">
-            <p className="">GitHub Profile</p>
+          <a href={githubUrl} className="footer__text footer__link" target="_blank" rel="noopener noreferrer">
+            <p>GitHub Profile</p>
           </a>
         </div>
 
-        <div className="footer__section">
-          <a href={resumeUrl} target="_blank" className="footer__text">
-            <p className="">Resume</p>
+        <div className="footer__text footer__section">
+          <a href={resumeUrl} target="_blank" className="footer__link">
+            <p>Resume</p>
           </a>
         </div>
       </div>

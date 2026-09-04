@@ -10,6 +10,10 @@
   margin-right: -5px;
 }
 
+.navcard__text {
+  font-weight: 500;
+}
+
 .navcard__container h3 {
   font-size: clamp(1rem, 3.5vw, 1.3rem);
   display: flex;
