@@ -1,0 +1,45 @@
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-indicator:hover {
+  opacity: 0.8;
+}
+
+.scroll-indicator__arrow {
+  width: 40px;
+  height: auto;
+  animation: scroll-bounce 2s infinite;
+  opacity: 0.7;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .scroll-indicator__arrow {
+    filter: invert(0.2);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .scroll-indicator__arrow {
+    filter: invert(0.8);
+  }
+}
