@@ -3,6 +3,22 @@
   justify-content: center;
   align-items: center;
   height: 30vh;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-indicator:hover {
+  opacity: 0.8;
+}
+
+.scroll-indicator__arrows {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
 }
 
 .scroll-indicator__arrow {
@@ -10,19 +26,28 @@
   height: 24px;
   border: 2px solid currentColor;
   border-top: none;
-  border-left: none;
-  transform: rotate(-45deg);
+  border-right: none;
+  transform: rotate(45deg);
   animation: scroll-bounce 2s infinite;
   opacity: 0.7;
 }
 
+.scroll-indicator__arrow:first-child {
+  animation-delay: 0s;
+}
+
+.scroll-indicator__arrow:last-child {
+  animation-delay: 0.3s;
+  margin-top: -8px;
+}
+
 @keyframes scroll-bounce {
   0%, 100% {
-    transform: rotate(-45deg) translateY(0);
+    transform: rotate(45deg) translateY(0);
     opacity: 0.7;
   }
   50% {
-    transform: rotate(-45deg) translateY(10px);
+    transform: rotate(45deg) translateY(10px);
     opacity: 0.3;
   }
 }
