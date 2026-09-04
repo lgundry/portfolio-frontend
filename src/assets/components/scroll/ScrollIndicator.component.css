@@ -1,0 +1,33 @@
+.scroll-indicator {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.scroll-indicator__arrow {
+  animation: scroll-bounce 2s infinite;
+  opacity: 0.3;
+}
+
+.scroll-indicator__arrow:hover {
+  opacity: 0.2;
+}
+
+@keyframes scroll-bounce {
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .scroll-indicator__arrow {
+    color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .scroll-indicator__arrow {
+    color: white;
+  }
+}

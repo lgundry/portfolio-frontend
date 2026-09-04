@@ -1,11 +1,12 @@
 import './NavCard.component.css'
-import type { IconType } from 'react-icons'
+import type { ComponentType, SVGProps } from 'react'
 import Button from '../button/Button.component.tsx'
 
 interface myProps {
   title: string;
   destination: string;
-  icon: IconType;
+  icon: ComponentType<SVGProps<SVGSVGElement>>
+  iconClassName?: string;
 }
 
 function NavCard(props: myProps) {
@@ -23,7 +24,7 @@ function NavCard(props: myProps) {
   return (
     <div className="navcard__container">
       <Button onPress={handleNavigation}>
-        <Icon className="navcard__icon"/>
+        <Icon className={`navcard__icon ${props.iconClassName ?? ''}`}/>
         <h3 className="navcard__text">{ props.title }</h3>
       </Button>
     </div>

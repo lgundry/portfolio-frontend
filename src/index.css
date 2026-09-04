@@ -10,6 +10,9 @@
   --color-tertiary: #012615;
   --color-quaternary: #404040;
   --color-quinary: #0D0D0D;
+
+  --text-accent-1: #D4966E;
+  --text-accent-2: #9EDA95;
   
   /* Text Color */
   color: #fff;
@@ -44,6 +47,16 @@ h4 {
 h5 {
   font-size: clamp(0.25rem, 1vw, 1rem);
   font-weight: 250;
+}
+
+.highlight-1 {
+  background: none;
+  color: var(--text-accent-1);
+}
+
+.highlight-2 {
+  background: none;
+  color: var(--text-accent-2);
 }
 
 @media (prefers-color-scheme: light) {

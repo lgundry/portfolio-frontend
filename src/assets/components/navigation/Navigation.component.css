@@ -1,4 +1,4 @@
-div.nav__container {
+.nav__container {
   position: fixed;
   top: 0vh;
 
@@ -8,6 +8,9 @@ div.nav__container {
 
   background-color: #000000AF;
   backdrop-filter: blur(30px);
+}
+
+.brandIcon {
 }
 
 @media (prefers-color-scheme: light) {
