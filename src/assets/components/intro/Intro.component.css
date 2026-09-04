@@ -3,22 +3,19 @@ div.intro__container {
   flex: 1;
   justify-content: center;
 
-  margin-top: 25vh;
-  margin-bottom: 18vh;
+  margin-top: 7vh;
+  margin-bottom: 36vh;
 }
 
 div.intro {
   display: flex;
   flex-direction: row;
-  width: 60vw;
+  min-width: 60vw;
   height: 45vh;
   padding: 2%;
 
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(18px);
-  border-radius: 25px;
-  background-color: #0000008A;
-  box-shadow: 4px 4px #4040404A; 
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .intro__text {
@@ -26,12 +23,11 @@ div.intro {
   width: 60%;
   align-content: center;
   margin-right: 5%;
-  margin-bottom: 5%;
 }
 
 .intro__headshot {
   flex: 0 0 25%;
-  width: 25%;
+  width: 15vw;
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   align-self: center;
@@ -40,10 +36,12 @@ div.intro {
 
 .intro__supertext {
   text-align: right;
+  margin-bottom: 10px;
 }
 
 .intro__subtext {
   text-align: right;
+  margin-top: 10px;
 }
 
   

@@ -10,6 +10,9 @@
   --color-tertiary: #012615;
   --color-quaternary: #404040;
   --color-quinary: #0D0D0D;
+
+  --text-accent-1: #D4966E;
+  --text-accent-2: #9EDA95;
   
   /* Text Color */
   color: #fff;

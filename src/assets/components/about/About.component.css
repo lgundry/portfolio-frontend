@@ -6,7 +6,7 @@
 }
 
 .aboutText__container {
-  width: 35vw;
+  width: 40vw;
   margin-right: 60px;
   align-content: center;
 }
@@ -15,6 +15,12 @@
   align-content: center;
 }
 
+.about__heading {
+  margin-bottom: 15px;
+}
+
 .about__text {
   font-size: 1.2rem;
+  margin-bottom: 60px;
 }
+
