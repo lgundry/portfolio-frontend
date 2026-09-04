@@ -1,14 +1,12 @@
 .skills__container {
-  width: 80vw;
-  text-align: center;
-}
-
-.skills__heading {
+  width: 70vw;
   display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
   justify-content: center;
 }
 
-.skillsLogo__container {
+.skills__heading {
   display: flex;
   justify-content: center;
 }
