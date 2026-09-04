@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 20vh;
   background: none;
   border: none;
   cursor: pointer;
@@ -22,12 +22,12 @@
 }
 
 .scroll-indicator__arrow {
-  width: 24px;
-  height: 24px;
-  border: 2px solid currentColor;
+  width: 4vw;
+  height: 4vw;
+  border: 10px solid currentColor;
   border-top: none;
   border-left: none;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   animation: scroll-bounce 2s infinite;
   opacity: 0.7;
 }
@@ -37,17 +37,17 @@
 }
 
 .scroll-indicator__arrow:last-child {
-  animation-delay: 0.3s;
-  margin-top: -8px;
+  animation-delay: 0.15s;
+  margin-top: -2vw;
 }
 
 @keyframes scroll-bounce {
   0%, 100% {
-    transform: rotate(-45deg) translateY(0);
+    transform: rotate(45deg) translateY(0) translateX(0);
     opacity: 0.7;
   }
-  50% {
-    transform: rotate(-45deg) translateY(10px);
+  35% {
+    transform: rotate(45deg) translateY(10px) translateX(10px);
     opacity: 0.3;
   }
 }
@@ -60,6 +60,6 @@
 
 @media (prefers-color-scheme: dark) {
   .scroll-indicator__arrow {
-    border-color: #ccc;
+    border-color: #fff;
   }
 }

@@ -1,6 +1,6 @@
 import './Intro.component.css'
 import Headshot from 'images/IMG_4838.jpeg'
-import ScrollIndicator from './ScrollIndicator.component'
+import ScrollIndicator from 'components/scroll/ScrollIndicator.component'
 
 function Intro() {
   return (
