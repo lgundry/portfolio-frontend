@@ -1,26 +1,23 @@
 .navcard__container {
-  margin-right: 15px;
-  margin-left: 15px;
+  width: 120px;
+  height: 2.5rem;
+  border-radius: 5px;
+  align-self: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navcard__icon {
-  display: flex;
   width: 50px;
-  align-self: center;
-  margin-right: -5px;
-}
-
-.navcard__icon.brandIcon {
-  width: 30px;
-  margin-right: 15px;
 }
 
 .navcard__text {
   font-weight: 500;
+  text-align: center;
 }
 
 .navcard__container h3 {
   font-size: clamp(1rem, 3.5vw, 1.3rem);
-  display: flex;
-  align-items: center;
 }

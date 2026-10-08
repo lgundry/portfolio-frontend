@@ -4,7 +4,6 @@ import ScrollIndicator from 'components/scroll/ScrollIndicator.component'
 
 function Intro() {
   return (
-    <>
     <div id="intro__container" className="intro__container">
       <div className="intro">
         <div className="intro__text">
@@ -14,8 +13,6 @@ function Intro() {
         <img className="intro__headshot" src={Headshot} alt="headshot" />
       </div>
     </div>
-    <ScrollIndicator  />
-    </>
   )
 };
 export default Intro;
