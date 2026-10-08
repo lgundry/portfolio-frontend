@@ -1,9 +1,4 @@
 import './Navigation.component.css'
-import {
-  LuUser,
-  LuWrench,
-  LuMail
-} from "react-icons/lu"
 import BrandIcon from 'images/Brand.svg?react'
 import NavCard from './NavCard.component.tsx'
 
@@ -14,26 +9,36 @@ function Navigation() {
     { title: "Contact", destination: "contact__container"},
   ]
 
+  const resumeUrl = '/Logan_Gundry_Resume.pdf'
+
+  const handleResumeClick = () => {
+    window.open(resumeUrl, '_blank', 'noopener,noreferrer')
+  }
+
   return (
     <div className="nav__container">
-      <NavCard className="nav__left" destination="intro__container" icon={BrandIcon} iconClassName="nav__icon"/>
+      <NavCard 
+        className="nav__left" 
+        destination="intro__container" 
+        icon={BrandIcon} 
+        iconClassName="nav__icon"
+      />
       <div className="nav__right">
         {sections.map((section, index) =>
           <NavCard 
-            key={ index }
-            title={ section.title }
-            destination={ section.destination }
-            icon={ section.icon }
-            iconClassName={ section.iconClassName ?? ''}
+            key={index}
+            title={section.title}
+            destination={section.destination}
           />
         )} 
         <NavCard
           title="Resume" 
-          className="resume__card"
+          className="nav__resume-card"
           customStyle={{
             backgroundColor: "var(--text-accent-1)",
             color: "black",
           }}
+          onResume={handleResumeClick}
         />
       </div>
     </div>
