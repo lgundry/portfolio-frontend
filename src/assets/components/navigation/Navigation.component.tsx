@@ -22,13 +22,17 @@ function Navigation() {
     })
   }
 
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   const handleResumeClick = () => {
     window.open('/Logan_Gundry_Resume.pdf', '_blank', 'noopener,noreferrer')
   }
 
   return (
     <header className="nav__container">
-      <div className="nav__brand">
+      <div className="nav__brand" onClick={handleLogoClick} role="button" tabIndex={0}>
         <BrandIcon className="nav__brand-icon" />
       </div>
 

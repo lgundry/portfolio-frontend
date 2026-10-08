@@ -65,15 +65,24 @@ div.intro__container {
 }
 
 .intro__button--primary {
-  background-color: var(--button-accent);
-  color: #fff;
-  border: none;
+  background-color: var(--button-accent) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.intro__button--primary:hover {
+  opacity: 0.9;
 }
 
 .intro__button--secondary {
   background: transparent;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+.intro__button--secondary:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 .intro__headshot {
