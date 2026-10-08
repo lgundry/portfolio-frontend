@@ -3,13 +3,8 @@ import Headshot from 'images/IMG_4838.jpeg'
 import Button from 'components/button/Button.component'
 
 function Intro() {
-  const handleViewWork = () => {
-    const element = document.getElementById('projects__container')
-    if (element) {
-      const navHeight = document.querySelector('.nav__container')?.clientHeight ?? 0
-      const offsetTop = element.offsetTop - navHeight
-      window.scrollTo({ top: offsetTop, behavior: 'smooth' })
-    }
+  const handleGithub = () => {
+    window.open('https://github.com/lgundry', '_blank', 'noopener,noreferrer')
   }
 
   const handleContact = () => {
@@ -31,7 +26,7 @@ function Intro() {
               <h3 className="intro__subtext">I make <span className="highlight-1">software</span></h3>
             </div>
             <div className="intro__buttons">
-              <Button className="intro__button intro__button--primary" onPress={handleViewWork}>
+              <Button className="intro__button intro__button--primary" onPress={handleGithub}>
                 View my work
               </Button>
               <Button className="intro__button intro__button--secondary" onPress={handleContact}>
