@@ -1,46 +1,95 @@
 div.intro__container {
-  width: 70vw;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  padding-top: 15vh;
-  margin: auto;
-  margin-bottom: 15vh;
+  align-items: center;
+  padding-top: 8vh;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .intro {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: calc(100vh - 8vh);
+  padding: 0 3rem 0 3rem;
+  box-sizing: border-box;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  width: 52%;
 }
 
 .intro__text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  margin-right: 80px;
-}
-
-.intro__headshot {
-  width: 30%;
-  border-radius: 50%;
-  aspect-ratio: 1 / 1;
-  align-self: center;
-  border: 0.3rem solid #D9D9D9;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .intro__supertext {
-  text-align: right;
   margin: 0;
+  text-align: left;
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.07em;
 }
 
 .intro__subtext {
-  text-align: right;
   margin: 0;
+  text-align: left;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  margin-top: 1.2rem;
 }
 
-@media (prefers-color-scheme: light) {
-  div.intro {
-    background-color: #f5f5f58A;
-  }
+.intro__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.intro__button {
+  padding: clamp(0.7rem, 1vw, 1rem) clamp(1rem, 2vw, 1.7rem);
+  border-radius: 6px;
+  font-size: clamp(0.85rem, 1.2vw, 1.1rem);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.intro__button--primary {
+  background-color: var(--button-accent) !important;
+  color: black !important;
+  border: none !important;
+}
+
+.intro__button--primary:hover {
+  opacity: 0.9;
+}
+
+.intro__button--secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+.intro__button--secondary:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.intro__headshot {
+  width: 40%;
+  min-width: 320px;
+  max-width: 580px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.25rem solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
 }
