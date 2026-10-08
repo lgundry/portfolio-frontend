@@ -80,15 +80,15 @@
 
 @media (max-width: 768px) {
   .nav__container {
-    height: auto;
-    min-height: 72px;
-    padding: 0.7rem 1rem;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    height: 9vh;
+    min-height: auto;
+    padding: 0 1rem;
+    gap: 1rem;
   }
 
   .nav__brand {
     min-width: 0;
+    flex-shrink: 0;
   }
 
   .nav__brand-icon {
@@ -97,10 +97,9 @@
   }
 
   .nav__menu {
-    width: 100%;
+    margin-left: auto;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.35rem 0.6rem;
+    gap: 0.5rem;
   }
 
   .nav__link {

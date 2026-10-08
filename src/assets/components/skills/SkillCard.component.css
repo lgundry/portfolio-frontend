@@ -1,6 +1,7 @@
 .skillCard__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .skillCard__image {
@@ -9,4 +10,11 @@
 
 .skillCard__label {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .skillCard__image {
+    width: 22vw;
+    max-width: 72px;
+  }
 }
