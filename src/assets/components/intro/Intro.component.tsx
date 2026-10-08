@@ -1,6 +1,10 @@
 import './Intro.component.css'
 import Headshot from 'images/IMG_4838.jpeg'
+<<<<<<< Updated upstream
 import ScrollIndicator from 'components/scroll/ScrollIndicator.component'
+=======
+import Button from 'components/button/Button.component'
+>>>>>>> Stashed changes
 
 function Intro() {
   return (
