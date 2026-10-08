@@ -4,7 +4,6 @@ import Button from '../button/Button.component'
 
 function Navigation() {
   const sections = [
-    { title: 'Home', destination: 'intro__container' },
     { title: 'About', destination: 'about__container' },
     { title: 'Skills', destination: 'skills__heading' },
     { title: 'Contact', destination: 'contact__container' },
@@ -44,11 +43,10 @@ function Navigation() {
             {section.title}
           </button>
         ))}
+        <Button className="nav__resume-button" onPress={handleResumeClick}>
+          Resume
+        </Button>
       </nav>
-
-      <Button className="nav__resume-button" onPress={handleResumeClick}>
-        Resume
-      </Button>
     </header>
   )
 }

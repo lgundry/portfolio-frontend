@@ -33,9 +33,12 @@
 .nav__menu {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2.2rem;
-  margin: 0 auto;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 .nav__link {
@@ -54,19 +57,19 @@
 }
 
 .nav__resume-button {
-  margin-left: 1.25rem;
   padding: 0.7rem 1.25rem;
   border: 1px solid rgba(255, 255, 255, 0.38);
   border-radius: 6px;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.9);
+  background: rgba(165, 109, 80, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   box-sizing: border-box;
   min-width: 108px;
   justify-content: center;
+  transition: background-color 0.2s ease;
 }
 
 .nav__resume-button:hover {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(165, 109, 80, 1);
 }
 
 @media (prefers-color-scheme: light) {
@@ -82,5 +85,6 @@
 
   .nav__resume-button {
     border-color: rgba(0, 0, 0, 0.28);
+    background: rgba(165, 109, 80, 0.8);
   }
 }
