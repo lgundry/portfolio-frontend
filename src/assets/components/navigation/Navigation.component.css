@@ -77,3 +77,39 @@
   min-width: 108px;
   font-size: clamp(0.75rem, 1vw, 1.05rem);
 }
+
+@media (max-width: 768px) {
+  .nav__container {
+    height: 9vh;
+    min-height: auto;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .nav__brand {
+    min-width: 0;
+    flex-shrink: 0;
+  }
+
+  .nav__brand-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .nav__link {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .nav__resume-button {
+    min-width: 0;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
