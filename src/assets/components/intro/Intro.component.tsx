@@ -43,7 +43,6 @@ function Intro() {
           <img className="intro__headshot" src={Headshot} alt="headshot" />
         </div>
       </div>
-      <ScrollIndicator />
     </>
   )
 }
