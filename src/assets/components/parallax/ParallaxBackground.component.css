@@ -22,3 +22,10 @@
     background-image: url("images/bg-light.jpg");
   }
 }
+
+/* Remove the parallax background entirely on mobile */
+@media (max-width: 768px) {
+  .parallax-bg {
+    display: none;
+  }
+}
