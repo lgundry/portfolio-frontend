@@ -3,6 +3,7 @@
   border: none;
   font: inherit;
   color: inherit;
+  font-weight: 500;
   cursor: pointer;
   transition: color 0.2s ease;
   display: flex;

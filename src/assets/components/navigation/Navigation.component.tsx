@@ -5,7 +5,7 @@ import Button from '../button/Button.component'
 function Navigation() {
   const sections = [
     { title: 'About', destination: 'about__container' },
-    { title: 'Skills', destination: 'skills__heading' },
+    { title: 'Skills', destination: 'skills__container' },
     { title: 'Contact', destination: 'contact__container' },
   ]
 

@@ -8,7 +8,7 @@
   justify-content: space-between;
   z-index: 20;
   width: 100%;
-  height: 8vh;
+  height: 9vh;
   min-height: 52px;
   padding: 0 2rem;
   box-sizing: border-box;
@@ -71,7 +71,7 @@
 .nav__resume-button {
   background-color: var(--button-accent);
   border: none;
-  color: #fff;
+  color: black;
   border-radius: 6px;
   padding: clamp(0.45rem, 0.9vw, 0.7rem) clamp(0.8rem, 1.4vw, 1.25rem);
   min-width: 108px;

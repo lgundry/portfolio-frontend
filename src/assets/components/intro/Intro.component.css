@@ -16,7 +16,6 @@ div.intro__container {
   min-height: calc(100vh - 8vh);
   padding: 0 3rem 0 3rem;
   box-sizing: border-box;
-  gap: 3rem;
 }
 
 .intro__content {
@@ -37,7 +36,7 @@ div.intro__container {
 .intro__supertext {
   margin: 0;
   text-align: left;
-  font-size: clamp(4rem, 7vw, 7rem);
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
   line-height: 0.92;
   letter-spacing: -0.07em;
 }
@@ -59,14 +58,13 @@ div.intro__container {
   padding: clamp(0.7rem, 1vw, 1rem) clamp(1rem, 2vw, 1.7rem);
   border-radius: 6px;
   font-size: clamp(0.85rem, 1.2vw, 1.1rem);
-  font-weight: 500;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
 
 .intro__button--primary {
   background-color: var(--button-accent) !important;
-  color: #fff !important;
+  color: black !important;
   border: none !important;
 }
 
@@ -88,7 +86,7 @@ div.intro__container {
 .intro__headshot {
   width: 40%;
   min-width: 320px;
-  max-width: 620px;
+  max-width: 580px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
