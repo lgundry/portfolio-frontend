@@ -65,12 +65,12 @@ div.intro__container {
 }
 
 .intro__button--primary {
-  background-color: #A56D50;
+  background-color: var(--button-accent);
   color: #fff;
 }
 
 .intro__button--primary:hover {
-  background-color: #B8825E;
+  background-color: rgba(165, 109, 80, 1);
   transform: translateY(-2px);
 }
 
