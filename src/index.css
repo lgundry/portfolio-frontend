@@ -1,19 +1,8 @@
 :root {
-  /* Default Root Styles */
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Color Variables */
-  --color-primary: #025930;
-  --color-secondary: #014023;
-  --color-tertiary: #012615;
-  --color-quaternary: #404040;
-  --color-quinary: #0D0D0D;
-  
-  /* Text Color */
+  --text-accent-1: #e0895f;
+  --text-accent-2: #9EDA95;
+  --button-accent: #e0895f;
   color: #fff;
-
   background-color: #000;
 }
 
@@ -21,40 +10,12 @@
   font-family: 'Libre Franklin', sans-serif;
 }
 
-h1 {
-  font-size: clamp(1.75rem, 3.5vw, 8rem);
-  font-weight: 900;
+.highlight-1 {
+  background: none;
+  color: var(--text-accent-1);
 }
 
-h2 {
-  font-size: clamp(1.25rem, 3vw, 5rem);
-  font-weight: 700;
-}
-
-h3 {
-  font-size: clamp(0.75rem, 2.5vw, 2rem);
-  font-weight: 500;
-}
-
-h4 {
-  font-size: clamp(0.5rem, 2vw, 1.5rem);
-  font-weight: 300;
-}
-
-h5 {
-  font-size: clamp(0.25rem, 1vw, 1rem);
-  font-weight: 250;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.highlight-2 {
+  background: none;
+  color: var(--text-accent-2);
 }

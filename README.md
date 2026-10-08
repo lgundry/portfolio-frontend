@@ -35,15 +35,7 @@ This repository contains the public-facing website that showcases projects, skil
 - src/ — application source (components, assets, hooks, styles)
 - public/ — static files
 - README.md — this file
-
-## Deployment
-
-Build the site (npm run build) and deploy the contents of the dist/ directory to your hosting provider (Netlify, Vercel, GitHub Pages, etc.). I can add a CI/CD workflow for deploys later if you want.
-
+  
 ## Contributing / Updates
 
 This is a personal portfolio; if you want to suggest changes, open an issue or a PR. For small updates, use branches named `update/<topic>`.
-
-## License
-
-If you want this code to be reused, tell me and I can add a license (MIT is common).

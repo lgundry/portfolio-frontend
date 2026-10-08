@@ -1,19 +1,34 @@
 .about__container {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  margin: auto;
+  margin-bottom: 10vh;
+  padding-top: 10vh;
+  min-height: calc(80vh - 8vh);
+  width: 70vw;
 }
 
 .aboutText__container {
-  width: 35vw;
+  width: 40vw;
   margin-right: 60px;
   align-content: center;
+  align-self: center;
 }
 
 .loading__container {
   align-content: center;
 }
 
+.about__heading {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
 .about__text {
   font-size: 1.2rem;
+}
+
+.about__icon {
+  width: 20vw;
+  margin: auto;
+  align-self: center;
 }
