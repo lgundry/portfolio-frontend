@@ -66,7 +66,8 @@ div.intro__container {
 
 .intro__button--primary {
   background-color: var(--button-accent) !important;
-  color: #fff !important;
+  color: black !important;
+  font-weight: 500 !important;
   border: none !important;
 }
 
@@ -76,6 +77,7 @@ div.intro__container {
 
 .intro__button--secondary {
   background: transparent;
+  font-weight: 500 !important;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.42);
 }
