@@ -58,8 +58,13 @@ export default function ParallaxBackground({ speed = 1.3, darkImage, lightImage,
   }, [darkImage, lightImage]);
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      // Respect reduced motion: keep background static or fallback to simple background
+    if (typeof window === 'undefined') return;
+
+    const isReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMobile = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+
+    if (isReducedMotion || isMobile) {
+      // Respect reduced motion and disable parallax on mobile: keep background static
       if (ref.current) ref.current.style.transform = 'translate3d(0,0,0)';
       return;
     }
