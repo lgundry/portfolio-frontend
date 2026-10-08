@@ -47,8 +47,7 @@
   }
 
   .about__icon {
-    width: min(48vw, 220px);
-    margin: 0 auto 2rem;
+    display: none;
   }
 
   .about__heading {
