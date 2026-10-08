@@ -1,47 +1,56 @@
 import './Navigation.component.css'
 import BrandIcon from 'images/Brand.svg?react'
-import NavCard from './NavCard.component.tsx'
+import Button from '../button/Button.component'
 
 function Navigation() {
   const sections = [
-    { title: "About", destination: "about__container"},
-    { title: "Skills", destination: "skills__heading"},
-    { title: "Contact", destination: "contact__container"},
+    { title: 'Home', destination: 'intro__container' },
+    { title: 'About', destination: 'about__container' },
+    { title: 'Skills', destination: 'skills__heading' },
+    { title: 'Contact', destination: 'contact__container' },
   ]
 
-  const resumeUrl = '/Logan_Gundry_Resume.pdf'
+  const handleNavigate = (destination: string) => {
+    const element = document.getElementById(destination)
+    if (!element) return
+
+    const navHeight = document.querySelector('.nav__container')?.clientHeight ?? 0
+    const offsetTop = element.offsetTop - navHeight
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth',
+    })
+  }
 
   const handleResumeClick = () => {
-    window.open(resumeUrl, '_blank', 'noopener,noreferrer')
+    window.open('/Logan_Gundry_Resume.pdf', '_blank', 'noopener,noreferrer')
   }
 
   return (
-    <div className="nav__container">
-      <NavCard 
-        className="nav__left" 
-        destination="intro__container" 
-        icon={BrandIcon} 
-        iconClassName="nav__icon"
-      />
-      <div className="nav__right">
-        {sections.map((section, index) =>
-          <NavCard 
-            key={index}
-            title={section.title}
-            destination={section.destination}
-          />
-        )} 
-        <NavCard
-          title="Resume" 
-          className="nav__resume-card"
-          customStyle={{
-            backgroundColor: "var(--text-accent-1)",
-            color: "black",
-          }}
-          onResume={handleResumeClick}
-        />
+    <header className="nav__container">
+      <div className="nav__brand">
+        <BrandIcon className="nav__brand-icon" />
       </div>
-    </div>
+
+      <nav className="nav__menu" aria-label="Main navigation">
+        {sections.map((section) => (
+          <button
+            key={section.destination}
+            type="button"
+            className="nav__link"
+            onClick={() => handleNavigate(section.destination)}
+          >
+            {section.title}
+          </button>
+        ))}
+      </nav>
+
+      <Button className="nav__resume-button" onPress={handleResumeClick}>
+        Resume
+      </Button>
+    </header>
   )
 }
-export default Navigation;
+
+export default Navigation
