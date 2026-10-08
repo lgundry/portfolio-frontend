@@ -24,9 +24,9 @@ const skills = [
 
 function Skills() {
   return (
-    <>
+    <div id="skills__container" className="skills__container">
       <h2 id="skills__heading" className="skills__heading">Skills</h2>
-      <div id="skills__container" className="skills__container">
+      <div id="skills-card__container" className="skills-card__container">
         {skills.map((skill, index) =>
           <SkillCard 
             key={ index }
@@ -35,7 +35,7 @@ function Skills() {
           />
         )}
       </div>
-    </>
+    </div>
   )
 }
 export default Skills;

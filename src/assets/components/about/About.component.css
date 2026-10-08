@@ -1,9 +1,9 @@
 .about__container {
   display: flex;
   margin: auto;
-  margin-top: 11vh;
   margin-bottom: 10vh;
   padding-top: 10vh;
+  min-height: calc(80vh - 8vh);
   width: 70vw;
 }
 
@@ -19,6 +19,7 @@
 }
 
 .about__heading {
+  font-size: 2.5rem;
   margin: 0;
 }
 
